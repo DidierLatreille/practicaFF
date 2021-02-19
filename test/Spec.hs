@@ -1,5 +1,5 @@
 import Test.Hspec
-import Tecnicas
+import Lib
 
 objetivo :: Objetivo
 objetivo = "bolsa de entrenamiento"
