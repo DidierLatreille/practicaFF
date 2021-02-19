@@ -7,10 +7,6 @@ poderGolpe = (15*)
 fortalezaObjetivo :: Objetivo -> Int
 fortalezaObjetivo = (2 *).length
 
--- prototipofunciongolpe
--- golpe :: Int -> Objetivo -> Int
--- golpe horasEntrenamiento nombreObjetivo = div ( 15 * horasEntrenamiento ) ( ( (2 *) . length ) nombreObjetivo )
-
 -- mide la presion del golpe
 golpe :: Int -> Objetivo -> Int
 golpe horasEntrenamiento nombreObjetivo = div (poderGolpe horasEntrenamiento) (fortalezaObjetivo nombreObjetivo)
