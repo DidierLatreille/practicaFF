@@ -21,11 +21,11 @@ horasGolpesNormalesConsecutivos = 240
 horasGomuGomuElephantGatling :: Int
 horasGomuGomuElephantGatling = 180
 
-objetivoDificil :: String -> Bool
+objetivoDificil :: Objetivo -> Bool
 objetivoDificil = (100 >).golpe horasGomuGomuElephantGatling
 
-focalizarObjetivo :: String -> String
+focalizarObjetivo :: Objetivo -> String
 focalizarObjetivo = take 7
 
-accesibilidadObjetivo :: String -> Int
+accesibilidadObjetivo :: Objetivo -> Int
 accesibilidadObjetivo = (flip div  10).((golpe horasGolpesNormalesConsecutivos).focalizarObjetivo)
